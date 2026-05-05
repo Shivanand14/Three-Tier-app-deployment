@@ -23,7 +23,7 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/skillpluse-backend:shiva
+          tags: ${{ secrets.DOCKER_USERNAME }}/skillpulse-backend:shiva
 
 
         
