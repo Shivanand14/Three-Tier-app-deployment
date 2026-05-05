@@ -1,0 +1,14 @@
+name: shiva ci workflow
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Docker
+        uses: docker/setup-buildx-action@v4 # Note: v3 is currently the stable version for buildx
