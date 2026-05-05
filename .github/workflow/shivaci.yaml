@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Docker
-        uses: docker/setup-buildx-action@v4 # Note: v3 is currently the stable version for buildx
+        uses: docker/setup-buildx-action@v4 #inissue
