@@ -2,9 +2,9 @@
 name: Shiva CD Workflow
 on:
   workflow_run:
-  workflow: ["shiva ci workflow"]
-  types: 
-    - completed
+    workflow: "shiva ci workflow"
+    types: 
+      - completed
 
 
 jobs:
