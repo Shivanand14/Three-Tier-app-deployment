@@ -3,7 +3,7 @@ name: Shiva CD Workflow
 on:
   
   workflow_run:
-    workflow: ["s11.yml"]
+    workflow: [s11.yml]
     types: [completed]
 
 
