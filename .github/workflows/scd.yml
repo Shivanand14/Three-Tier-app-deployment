@@ -19,7 +19,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          password: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/Three-Tier-app-deployment
             git pull origin main
