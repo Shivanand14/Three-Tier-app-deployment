@@ -1,0 +1,27 @@
+
+name: Shiva CD Workflow
+on:
+  
+  workflow_run:
+    workflow: ["shiva ci workflow"]
+    types: [completed]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Execute remote SSH commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: whoami
+          
+
+      
