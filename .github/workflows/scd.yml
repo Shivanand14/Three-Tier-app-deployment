@@ -24,8 +24,8 @@ jobs:
             git clone https://github.com/Shivanand14/Three-Tier-app-deployment.git
             cd ~/Three-Tier-app-deployment
             git pull origin main
-            docker-compose pull
-            docker-compose up -d
+            docker compose pull
+            docker compose up -d
 
 
 
