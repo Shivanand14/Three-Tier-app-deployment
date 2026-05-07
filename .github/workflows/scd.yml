@@ -22,6 +22,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }} #secret use test sf
           script: |
             cd ~/Three-Tier-app-deployment
+            git clone https://github.com/Shivanand14/Three-Tier-app-deployment.git
             git pull origin main
             docker-compose pull
             docker-compose up -d
