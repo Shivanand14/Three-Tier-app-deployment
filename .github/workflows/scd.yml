@@ -19,7 +19,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }} #secret use test sfff
+          key: ${{ secrets.EC2_SSH_KEY }} #secret use test sfff test
           script: |
             git clone https://github.com/Shivanand14/Three-Tier-app-deployment.git
             cd ~/Three-Tier-app-deployment
